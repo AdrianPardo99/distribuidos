@@ -13,7 +13,7 @@ import java.nio.ByteBuffer;
 
 public class Matriz{
 
-  static int N=4,
+  static int N=1000,
     A[][]=new int[N][N],
     B[][]=new int[N][N],
     C[][]=new int[N][N];
@@ -156,8 +156,16 @@ public class Matriz{
     }
   }
 
-  public static int checksum(int[] a){
-    int c=0;
+  public static long checksum(int[] a){
+    long c=0;
+    for(int i=0;i<a.length;i++){
+      c+=a[i];
+    }
+    return c;
+  }
+
+  public static long checksum(long[] a){
+    long c=0;
     for(int i=0;i<a.length;i++){
       c+=a[i];
     }
@@ -201,12 +209,12 @@ public class Matriz{
       for(i=0;i<w.length;i++){
         w[i].join();
       }
-      int checksumA[]=new int[N],cT;
+      long checksumA[]=new long[N],cT;
       for(i=0;i<N;i++){
         checksumA[i]=checksum(C[i]);
       }
       cT=checksum(checksumA);
-      System.out.print("Checksum de la matriz C: 0x"+Integer.toHexString(cT)+"\n");
+      System.out.print("Checksum de la matriz C: 0x"+Long.toHexString(cT)+"\n");
       if(N==4){
         System.out.print("Matriz C\n");
         muesta_matriz(C);
