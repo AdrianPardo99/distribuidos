@@ -1,0 +1,120 @@
+Un sistema que continua operando con normalidad ante las fallas
+Tolerante a fallas
+
+Número máximo de redes y hosts por red en una dirección IP v4 clase C:
+2,097,150 redes y 254 hosts por red
+
+Tipo de socket que no incluye acknowledgement ni re-envío:
+Socket datagrama
+
+¿Cómo se ocultan las fallas por omisión en la comunicación unicast confiable implementada mediante TCP?
+Mediante retransmisión de mensajes
+
+Comunicación punto a punto dónde una computadora envía mensajes a otra computadora:
+Unicast
+
+En una aplicación multicast ¿Qué identifica el grupo al cual se envía los mensajes?
+Una dirección IP de clase D
+
+Implementación de multicast confiable que envía acuse solo cuando no se recibe el mensaje:
+Acuse de negativo
+
+Protocolo utilizando generalmente para implementar comunicación unicast confiable:
+TCP
+
+Multitransmisión en la cual una computadora envía mensajes a una o más computadoras en una red:
+Multicast
+
+Falla que produce cualquier respuesta, en cualquier momento y con cualquier tiempo de repuesta:
+Falla arbitraria
+
+Si un objeto tiene un campo que es una referencia a otro objeto ¿Como serializa GSON este campo?
+Despliega el nombre del campo, dos puntos y el objeto referenciado completo
+
+Implementación de JSON desarrollada por Google:
+GSON
+
+¿Qué método de GSON se utiliza para desserializar una string?
+fromJson
+
+¿Qué método de GSON se utiliza para serializar un objeto o un arreglo?
+toJson
+
+En JSON {"nombre":"Hugo","edad":20,"sueldo":1000.0} es:
+Un objeto
+
+En JSON, una colección no ordenada de parejas nombre:valor separadas por comas
+Objeto
+
+En GSON si serializa y deserializa un objeto con auto-referencia ¿Qué valor tendrá el campo que hace la auto-referencia?
+null
+
+Formato texto para el intercambio de datos como objetos serializados
+JSON
+
+¿Qué formato se debe pasar al método setDateFormat para utilizar el estándar ISO8601 para las fechas?
+"yyyy-MM-dd'T'HH:mm:ss.SSS"
+
+En JSON, una colección ordenada de valores separados por comas
+Arreglo
+
+¿Qué URL es válida para rmiregistry?
+rmi://localhost:8080/nombre
+
+El paso de mensajes es un paradigma
+Orientado a datos
+
+Es el modelo natural para el desarrollo de sistemas distribuidos, ya que reproduce la comunicación entre las personas:
+Paso de mensajes
+
+Método utilizado por un servidor RMI para registrar un objeto remoto en rmiregistry
+java.rmi.bind
+
+La interface correspondiente al objeto remoto hereda de:
+java.rmi.Remote
+
+Servidor de nombres en Java RMI
+rmiregistry
+
+¿En qué computadora se ejecuta rmiregistry?
+Debe ejecutar en la misma computadora dónde ejecuta el servidor RMI
+
+Objeto cuyos métodos son invocados por un proceso que ejecuta en la misma computadora donde reside el objeto
+Objeto local
+
+El programador debe serializar los datos antes de enviarlos, y des-serializar los datos después de recibirlos
+Paso de mensajes
+
+Encapsula variables y funciones
+Objeto
+
+Aquella persona u organización que provee un agente que implementa un determinado servicio.
+Entidad proveedora
+
+Método HTTP utilizado por un servicio web estilo REST para crear recursos
+POST
+
+Contrato que gobierna la mecánica de interacción con un servicio en particular
+Descripción del servicio
+
+¿Qué principio de diseño indica que los servicios web estilo REST deben enviar peticiones completas e independientes?
+Los servicios son "sin estado"
+
+Persona u organización que desea hacer uso del servicio
+Entidad solicitante
+
+Software o hardware que envía y recibe mensajes que implementa un servicio web
+Agente
+
+Define un conjunto de principios arquitectónicos para la creación de servicios web
+REST
+
+Recurso caracterizado por un conjunto abstracto de la funcionalidad que se provee.
+Servicio
+
+Un sistema de software diseñado para soportar la interacción interoperable de maquina-a-máquina sobre una red.
+Servicio web
+
+Contrato que gobierna el significado y propósito de la interacción con el servicio
+Semántica del servicio
+

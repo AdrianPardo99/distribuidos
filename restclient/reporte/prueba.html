@@ -1,0 +1,21 @@
+<script>
+/* Todo el codigo de las demas funciones */
+function limpia_borra_todo(){
+  var client=new WSClient("/Servicio/rest/ws");
+  client.post("borrar_usuarios",{
+    borra_todo:get("borrar_usuarios").value
+  },function(code,result){
+    if(code==200)
+        alert("OK");
+    else
+        alert(JSON.stringify(result));
+  });
+
+}
+</script>
+<!--Todo el demas codigo HTML-->
+<div id="menu">
+  <!--Todo el codigo de los botones que hay-->
+  <button type="button" onclick="limpia_borra_todo();" style="width:200px">Borrar todos los usuarios</button>
+  <input type="hidden" id="borrar_usuarios" value="all">
+</div>
